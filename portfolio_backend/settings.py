@@ -7,7 +7,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = True
-ALLOWED_HOSTS = []
+# 🔻 ADD THIS BELOW DEBUG:
+ALLOWED_HOSTS = ['my-portfolio-4ttz.onrender.com', 'localhost', '127.0.0.1']
 
 # ✅ 1. Installed apps (include your app and staticfiles)
 INSTALLED_APPS = [
