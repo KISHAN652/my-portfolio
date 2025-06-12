@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "📦 Installing dependencies..."
-pip install -r reqs.txt
-
 echo "📄 Running migrations..."
 python manage.py migrate
 
