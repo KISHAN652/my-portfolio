@@ -1,0 +1,30 @@
+# Python virtual environment
+venv/
+
+# Python cache
+**//__pycache__/
+*.pyc
+
+# Database
+*.sqlite3
+
+# Django environment variables
+.env
+
+# Django migrations (optional)
+**/migrations/
+# Python virtual environment
+venv/
+
+# Python cache
+**/__pycache__/
+*.pyc
+
+# Database
+*.sqlite3
+
+# Django environment variables
+.env
+
+# Django migrations (optional)
+**/migrations/

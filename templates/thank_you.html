@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  ...
+
+<!-- templates/thank_you.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .thank-you-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        .thank-you-box h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .thank-you-box p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .thank-you-box a {
+            color: #fff;
+            background: #4CAF50;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: 0.3s ease;
+        }
+        .thank-you-box a:hover {
+            background: #43a047;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-box">
+        <h2>✅ Thank You!</h2>
+        <p>Your message has been received. I’ll get back to you soon.</p>
+        <a href="/">Go Back to Home</a>
+    </div>
+</body>
+</html>
