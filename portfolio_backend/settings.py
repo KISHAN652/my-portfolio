@@ -10,7 +10,7 @@ DEBUG = True
 # Static files (CSS, JS, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+# Trigger migration
 # Optional but good:
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
