@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY')
 
-DEBUG = True
+DEBUG = False  # Set to False for production
 # Static files (CSS, JS, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -16,7 +16,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 # 🔻 ADD THIS BELOW DEBUG:
-ALLOWED_HOSTS = ['my-portfolio-4ttz.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['my-portfolio-4ttz.onrender.com', 'localhost']
 
 # ✅ 1. Installed apps (include your app and staticfiles)
 INSTALLED_APPS = [
