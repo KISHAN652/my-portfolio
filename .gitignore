@@ -28,3 +28,4 @@ venv/
 
 # Django migrations (optional)
 **/migrations/
+staticfiles/
