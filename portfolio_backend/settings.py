@@ -3,13 +3,14 @@ from pathlib import Path
 from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = False  # Set to False for production
 # Static files (CSS, JS, Images)
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 # Optional but good:
 STATICFILES_DIRS = [
